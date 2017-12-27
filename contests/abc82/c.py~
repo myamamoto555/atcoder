@@ -1,0 +1,13 @@
+# coding:utf-8
+
+from collections import defaultdict
+
+N = int(raw_input())
+As = map(int, raw_input().split())
+
+dic = defaultdict(lambda:0)
+for a in As:
+    dic[a] += 1
+
+for k, v in dic.items():
+    print k, v

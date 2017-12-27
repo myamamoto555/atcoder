@@ -1,0 +1,19 @@
+# coding:utf-8
+
+from collections import defaultdict
+
+N, K = map(int, raw_input().split())
+As = map(int, raw_input().split())
+
+dic = defaultdict(lambda: 0)
+
+for a in As:
+    dic[a] += 1
+
+count = 0
+while True:
+    if len(dic) <= K:
+        break
+    print min(dic)
+    break
+    count += 1
